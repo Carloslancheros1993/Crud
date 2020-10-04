@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./cars.css">
+</head>
+<body>
+    <h1 class=" text-center mt-5">Search a Car</h1>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body border border-dark rounded">
+                <form onsubmit="event.preventDefault(), submitCar()" action="/cars">
+                    <div class="form-group">
+                      <label for="brand">Brand</label>
+                      <input type="text" class="form-control" id="brand" placeholder="Enter a Car brand">
+                      <label for="model">Model</label>
+                      <input type="text" class="form-control" id="model" placeholder="Enter a Car Model">
+                      <label for="color">Color</label>
+                      <input type="text" class="form-control" id="color" placeholder="Enter a Car Color">
+                      <label for="year">Year</label>
+                      <input type="text" class="form-control" id="year" placeholder="Enter a Car Year">
+                      <label for="price">Price</label>
+                      <input type="text" class="form-control" id="price" placeholder="Enter a Car price">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Color</th>
+                    <th>Year</th>
+                    <th>Price</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody id="cars-table-body">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/cars.js"></script>
+</body>
+</html>
