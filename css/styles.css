@@ -1,0 +1,18 @@
+body {
+    background-image: url('https://i.pinimg.com/originals/8c/91/9a/8c919a50a7ba93a93992db7da8a6ab6a.jpg');    
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1rem;
+    font-weight: 600;
+    backdrop-filter: brightness(50%);
+}
+td {
+    color: #F8F9F9;
+}
+th {
+    color: #F8F9F9;
+}
+.main-title {
+    color: #F8F9F9;
+    letter-spacing: 2em;
+}
